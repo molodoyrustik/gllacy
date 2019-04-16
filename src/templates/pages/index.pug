@@ -1,0 +1,94 @@
+extends ../layouts/main-layout.pug
+
+block title
+  title Главная
+
+block content
+  main.index
+    .index__gallery
+      .gallery
+        figure.gallery__content
+          img(src="/images/gallery/slide-1.png", alt="").gallery__img
+        h2.gallery__title Крем-брюле и пломбир с малиновым джемом
+        a(href="#").gallery__link Давайте оба!
+    .gallery__controller
+      button(data-color='#849d8f' data-imgsrc='/images/gallery/slide-1.png').gallery__btn 1
+      button(data-color='#8996a6' data-imgsrc='/images/gallery/slide-2.png').gallery__btn 2
+      button(data-color='#9d8b84' data-imgsrc='/images/gallery/slide-3.png').gallery__btn 3
+    .index__stock
+      .index__stock-left
+        .index__stock-title Малинка даром!
+        .index__stock-text При покупке 2 кг любого фруктового можорженого, добавим в ваш заказ банку малинового варенья бесплатно
+        .index__stock-link-wrap
+          a(href="#").index__stock-link Хочу варенье!
+      .index__stock-right
+        .index__stock-title Шоколадки даром!
+        .index__stock-text При покупке 2 кг любого фруктового можорженого, добавим в ваш заказ банку малинового варенья бесплатно
+        .index__stock-link-wrap
+          a(href="#").index__stock-link Хочу варенье!
+    .index__hits
+      ul.index__hits-list
+        li.index__hits-item
+          .index__hits-img-wrap
+            img(src="/images/hits/hits-1.png", alt="").index__hits-img
+          .index__hits__price-wrap
+            span.index__hits-price 310
+            img(src="/images/hits/word-r.png", alt="")
+            span /кг
+          a(href="#").index__hits-link Сливочное с апельсиновым джемом и цитрусовой стружкой
+        li.index__hits-item
+          .index__hits-img-wrap
+            img(src="/images/hits/hits-2.png", alt="").index__hits-img
+          .index__hits__price-wrap
+            span.index__hits-price 380
+            img(src="/images/hits/word-r.png", alt="")
+            span /кг
+          a(href="#").index__hits-link Сливочное с апельсиновым джемом и цитрусовой стружкой
+        li.index__hits-item
+          .index__hits-img-wrap
+            img(src="/images/hits/hits-3.png", alt="").index__hits-img
+          .index__hits__price-wrap
+            span.index__hits-price 355
+            img(src="/images/hits/word-r.png", alt="")
+            span /кг
+          a(href="#").index__hits-link Сливочное с апельсиновым джемом и цитрусовой стружкой
+        li.index__hits-item
+          .index__hits-img-wrap
+            img(src="/images/hits/hits-4.png", alt="").index__hits-img
+          .index__hits__price-wrap
+            span.index__hits-price 415
+            img(src="/images/hits/word-r.png", alt="")
+            span /кг
+          a(href="#").index__hits-link Сливочное с апельсиновым джемом и цитрусовой стружкой
+    .index__features
+      .features
+        .features__title Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+        .features__list
+          li.features__item.features__item--ice Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+          li.features__item.features__item--cow Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          li.features__item.features__item--leaf Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. 
+          li.features__item.features__item--thermometer Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
+    .index__row
+      .index__row-left
+        .index__row-title Новое в нашем блоге
+        a(href="#").index__row-link 10 способов сервировки фруктовых щербетов к столу
+      .index__row-right
+        .index__row-right-wrap
+          .email
+            .email__text Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) 
+            form(action="").email__form
+              input(type="text" placeholder='Электронная почта').email__input
+              input(type="submit" value='Отправить').email__submit
+    .index__map
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555343423712!5m2!1sru!2sru', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='').map
+      .contact
+        .contact__item
+          span.contact__item-title Адрес главного офиса и офлайн магазина:
+          span.contact__item-value ул. Большая Конюшенная 19/8, Санкт-Петербург
+        .contact__item
+          span.contact__item-title Для заказа по телефону:
+          span.contact__item-value 8 812 450-25-25
+          span.contact__item-title (с 10 до 20 ежедневно)
+        a(href="#").contact__link Форма обратной связи
+
+

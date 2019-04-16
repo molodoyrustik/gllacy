@@ -1,0 +1,136 @@
+.header {
+  position: absolute;
+  width: 1145px;
+  z-index: 2;
+  @extend %clearfix;
+}
+
+.header__left {
+  float: left;
+  align-items: center;
+  display: flex;
+}
+
+.header__logo {
+
+}
+
+.logo {
+
+}
+
+.logo__link {
+
+}
+
+.logo__img {
+
+}
+
+.header__nav {
+  margin-left: 30px;
+}
+
+.header__right {
+  float: right;
+  padding-top: 23px;
+}
+
+.header__row {
+
+}
+
+.header__row-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  a, i {
+    cursor: pointer;
+  }
+}
+
+.header__search {
+
+}
+
+.header__search-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(#ffffff, 0.2);
+  border-radius: 50%;
+  background-image: url('/images/icon-search.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-color: #fff;
+    background-image: url('/images/icon-search-hover.png');
+  }
+}
+
+.header__login {
+  display: block;
+  margin-left: 10px;
+  padding-left: 45px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  @include roboto('medium');
+  font-size: 14px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url('/images/icon-login.png');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  text-decoration: none;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: #fff;
+    color: #000000;
+    background-image: url('/images/icon-login-hover.png');
+  }
+}
+
+.header__basket {
+  display: block;
+  margin-left: 10px;
+  padding-left: 45px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  @include roboto('medium');
+  font-size: 14px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url('/images/icon-basket.png');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  text-decoration: none;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: #fff;
+    color: #000000;
+    background-image: url('/images/icon-basket-hover.png');
+  }
+}
+
+.header__date {
+  margin-bottom: 6px;
+  @include roboto('medium');
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.header__number  {
+  @include roboto('medium');
+  font-size: 22px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: right;
+}

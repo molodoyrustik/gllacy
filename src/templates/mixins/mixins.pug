@@ -1,0 +1,43 @@
+mixin header(page)
+  header.header-wrap
+    .header
+      .container
+        .header__logo
+          .logo
+            a(href="#").logo__text Техномарт
+        .header__search-wrap
+          i.icon-search.header__search-icon
+          span.header__search-placeholder Поиск:
+          input(type="text").header__search
+        a(href="#").header__link.header__bookmarks
+          i.icon-bookmark.header__link-icon
+          span Закладки: 0
+        a(href="#").header__link.header__basktet
+          i.icon-basket.header__link-icon
+          span Корзина: 10
+        a(href="#").header__checkout Оформить заказ
+    .header-second
+      .container
+        .header-second-row
+          .header-second-wrap
+            .header-second__text Интернет-магазин строительных материалов и инструментов для ремонта
+            .header-second__contact
+              .header-second__phone
+                i.icon-phone.header-second__phone-icon
+                span +7 (812) 555-05-55
+              .header-second__adress г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            if page === 'Главная'
+              .header__login-wrap
+                a(href="#").header__login
+                  i.icon-logout.header__login--icon
+                  span Войти
+                a(href="#").header__registration Регистрация
+            else
+              .header__user
+                .user-block
+                  .user-block__name Равшан Джамшутович
+                  a(href="#").user-block__my-orders Мои заказы
+                  a(href="#").user-block__my-cabinet Личный кабинет
+        .header-second-row
+          .header__nav
+            include ../common/navigation.pug

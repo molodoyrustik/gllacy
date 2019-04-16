@@ -1,0 +1,46 @@
+@mixin box-shadow($params){
+  box-shadow: $params;
+  -webkit-box-shadow : $params;
+  -moz-box-shadow: $params;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin inline-block($valign: top) {
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+@mixin roboto($typeCuprum: 'regular') {
+  @if $typeCuprum == 'thin' {
+    font-family:'Roboto Thin';
+  } @else if $typeCuprum == 'thin-italic' {
+    font-family: 'Roboto Thin Italic';
+  } @else if $typeCuprum == 'light' {
+    font-family: 'Roboto Light';
+  } @else if $typeCuprum == 'light-italic' {
+    font-family: 'Roboto Light Italic';
+  } @else if $typeCuprum == 'regular' {
+    font-family: 'Roboto Regular';
+  } @else if $typeCuprum == 'italic' {
+    font-family: 'Roboto Italic';
+  } @else if $typeCuprum == 'medium' {
+    font-family: 'Roboto Medium';
+  } @else if $typeCuprum == 'medium-italic' {
+    font-family: 'Roboto Medium Italic';
+  } @else if $typeCuprum == 'bold' {
+    font-family: 'Roboto Bold';
+  } @else if $typeCuprum == 'bold-italic' {
+    font-family: 'Roboto Bold Italic';
+  } @else if $typeCuprum == 'black' {
+    font-family: 'Roboto Black';
+  } @else if $typeCuprum == 'black-italic' {
+    font-family: 'Roboto Black Italic';
+  }
+}
